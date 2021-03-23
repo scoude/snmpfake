@@ -34,10 +34,13 @@ url : http://www.capitchilog.fr
 licence CECILL v2.1 (https://cecill.info/licences/Licence_CeCILL_V2.1-fr.txt)
  
 Exemple de requête avec un client snmp sous Linux
+
 $ snmpwalk -v 2c -c public 127.0.0.1:1610 1.3.6.1.4.1.9.9.91.1.1.1.1.4
+
 renvoi iso.3.6.1.4.1.9.9.91.1.1.1.1.4 = STRING: "90.2"
 
 Exemple de commande pour vérifier si l'application tourne bien 
-$ netstat -n --udp --listen | grep 1610
-renvoi udp6       0      0 127.0.0.1:1610          :::*   
 
+$ netstat -n --udp --listen | grep 1610
+
+renvoi udp6       0      0 127.0.0.1:1610          :::*   
